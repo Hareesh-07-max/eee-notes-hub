@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - RGUKT EEE Notes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>RGUKT EEE Notes Hub</h1>
+        <p>Admin Dashboard</p>
+
+        <button onclick="logoutAdmin()">
+            Logout
+        </button>
+    </header>
+
+
+    <!-- Upload Notes -->
+    <section class="admin-panel">
+
+        <h2>Upload Notes</h2>
+
+        <label>Semester</label>
+
+        <select id="semester">
+
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+
+        </select>
+
+
+        <label>Subject</label>
+
+        <select id="subject">
+
+            <option value="">
+                Select Subject
+            </option>
+
+        </select>
+
+
+        <label>Section</label>
+
+        <select id="section">
+
+            <option value="Unit 1">
+                Unit 1
+            </option>
+
+            <option value="Unit 2">
+                Unit 2
+            </option>
+
+            <option value="Unit 3">
+                Unit 3
+            </option>
+
+            <option value="Unit 4">
+                Unit 4
+            </option>
+
+            <option value="Unit 5">
+                Unit 5
+            </option>
+
+            <option value="Unit 6">
+                Unit 6
+            </option>
+
+            <option value="Previous Papers">
+                Previous Papers
+            </option>
+
+        </select>
+
+
+        <label>Note Title</label>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Example: Network Theory Unit 1 Notes"
+        >
+
+
+        <label>Select PDF</label>
+
+        <input
+            type="file"
+            id="pdf"
+            accept=".pdf"
+        >
+
+
+        <button onclick="uploadNote()">
+            Upload PDF
+        </button>
+
+        <p id="upload-message"></p>
+
+    </section>
+
+
+
+    <!-- Pending Notes -->
+    <section class="admin-panel">
+
+        <h2>Pending Notes</h2>
+
+        <div id="pending-notes">
+            Loading pending notes...
+        </div>
+
+    </section>
+
+
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Your JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

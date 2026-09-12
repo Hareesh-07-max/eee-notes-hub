@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RGUKT EEE Notes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+    <h1>RGUKT EEE Notes Hub</h1>
+    <p>Engineering Notes for RGUKT EEE Students</p>
+
+    <button class="admin-login-button"
+            onclick="window.location.href='admin.html'">
+        Admin Login
+    </button>
+</header>
+
+
+    <!-- WELCOME SECTION -->
+
+    <section class="welcome">
+
+        <h2>Welcome to Engineering Notes Hub</h2>
+
+        <p>
+            Access notes, study materials and previous question papers
+            for all semesters of Electrical and Electronics Engineering.
+        </p>
+
+    </section>
+
+
+    <!-- SEMESTER SECTION -->
+
+    <section class="semester-section">
+
+        <h2>Select Your Semester</h2>
+
+        <div class="semester-grid">
+
+            <button onclick="openSemester(1)">
+                Semester 1
+            </button>
+
+            <button onclick="openSemester(2)">
+                Semester 2
+            </button>
+
+            <button onclick="openSemester(3)">
+                Semester 3
+            </button>
+
+            <button onclick="openSemester(4)">
+                Semester 4
+            </button>
+
+            <button onclick="openSemester(5)">
+                Semester 5
+            </button>
+
+            <button onclick="openSemester(6)">
+                Semester 6
+            </button>
+
+            <button onclick="openSemester(7)">
+                Semester 7
+            </button>
+
+            <button onclick="openSemester(8)">
+                Semester 8
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBJECTS / NOTES WILL APPEAR HERE -->
+
+    <section
+        id="subject-section"
+        class="subjects-section">
+    </section>
+    <!-- Upload Notes Section -->
+<section class="admin-panel">
+    <h2>Upload Notes</h2>
+
+    <p style="text-align:center;">
+        Have useful notes or previous papers? Upload them here.
+        An admin will review them before they appear on the website.
+    </p>
+
+    <label>Semester</label>
+    <select id="semester">
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <option value="3">Semester 3</option>
+        <option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+        <option value="6">Semester 6</option>
+        <option value="7">Semester 7</option>
+        <option value="8">Semester 8</option>
+    </select>
+
+    <label>Subject</label>
+    <select id="subject">
+        <option value="">Select Subject</option>
+    </select>
+
+    <label>Section</label>
+    <select id="section">
+        <option value="Unit 1">Unit 1</option>
+        <option value="Unit 2">Unit 2</option>
+        <option value="Unit 3">Unit 3</option>
+        <option value="Unit 4">Unit 4</option>
+        <option value="Unit 5">Unit 5</option>
+        <option value="Unit 6">Unit 6</option>
+        <option value="Previous Papers">Previous Papers</option>
+    </select>
+
+    <label>Note Title</label>
+    <input
+        type="text"
+        id="title"
+        placeholder="Example: Network Theory Unit 1 Notes"
+    >
+
+    <label>Select PDF</label>
+    <input type="file" id="pdf" accept=".pdf">
+
+    <button onclick="uploadNote()">Upload PDF</button>
+
+    <p id="upload-message"></p>
+</section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 RGUKT EEE Notes Hub
+        </p>
+
+        <p>
+            Notes and study materials for RGUKT students
+        </p>
+
+    </footer>
+
+
+    <!-- SUPABASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- YOUR JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

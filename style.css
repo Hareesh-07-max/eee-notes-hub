@@ -1,0 +1,493 @@
+/* ======================================================
+   GENERAL
+   ====================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+/* ======================================================
+   HEADER
+   ====================================================== */
+
+header {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+/* ======================================================
+   ADMIN LOGIN BUTTON
+   ====================================================== */
+
+.admin-login-button {
+    width: auto !important;
+    padding: 10px 20px !important;
+    margin-top: 10px;
+    background-color: white !important;
+    color: #123c69 !important;
+    border: 2px solid #123c69 !important;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-login-button:hover {
+    background-color: #123c69 !important;
+    color: white !important;
+}
+
+
+/* ======================================================
+   WELCOME SECTION
+   ====================================================== */
+
+.welcome {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+    color: #123c69;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* ======================================================
+   SEMESTER SECTION
+   ====================================================== */
+
+.semester-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.semester-section h2 {
+    margin-bottom: 25px;
+    color: #123c69;
+}
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.semester-grid button {
+    padding: 18px 10px;
+    background-color: white;
+    color: #123c69;
+    border: 2px solid #123c69;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.semester-grid button:hover {
+    background-color: #123c69;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ======================================================
+   SUBJECT SECTION
+   ====================================================== */
+
+.subjects-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.subjects-section h2 {
+    text-align: center;
+    color: #123c69;
+    margin-bottom: 25px;
+}
+
+.subject-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* ======================================================
+   SUBJECT CARD
+   ====================================================== */
+
+.subject-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subject-card h3 {
+    margin-top: 0;
+    color: #123c69;
+}
+
+.subject-card button {
+    padding: 10px 20px;
+    background-color: #123c69;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.subject-card button:hover {
+    background-color: #0b2948;
+}
+
+
+/* ======================================================
+   NOTES PAGE
+   ====================================================== */
+
+.notes-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.notes-page h2 {
+    text-align: center;
+    color: #123c69;
+}
+
+.notes-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* ======================================================
+   NOTES CARD
+   ====================================================== */
+
+.notes-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notes-card h3 {
+    color: #123c69;
+    margin-top: 0;
+}
+
+.notes-card button {
+    padding: 10px 20px;
+    background-color: #123c69;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.notes-card button:hover {
+    background-color: #0b2948;
+}
+
+
+/* ======================================================
+   PREVIOUS PAPERS
+   ====================================================== */
+
+.previous-paper {
+    grid-column: span 2;
+}
+
+
+/* ======================================================
+   ADMIN LOGIN PAGE
+   ====================================================== */
+
+.login-box {
+    width: 350px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    color: #123c69;
+}
+
+.login-box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #123c69;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #0b2948;
+}
+
+#login-message {
+    margin-top: 15px;
+}
+
+
+/* ======================================================
+   ADMIN PANEL
+   ====================================================== */
+
+.admin-panel {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.admin-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #123c69;
+}
+
+.admin-panel label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admin-panel input,
+.admin-panel select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.admin-panel button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #123c69;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.admin-panel button:hover {
+    background-color: #0b2948;
+}
+
+
+/* ======================================================
+   PENDING NOTES
+   ====================================================== */
+
+.pending-note {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.pending-note h3 {
+    margin-top: 0;
+    color: #123c69;
+}
+
+.pending-note p {
+    margin: 8px 0;
+}
+
+
+/* ======================================================
+   APPROVE BUTTON
+   ====================================================== */
+
+.approve-button {
+    background-color: green !important;
+}
+
+.approve-button:hover {
+    background-color: darkgreen !important;
+}
+
+
+/* ======================================================
+   DELETE BUTTON
+   ====================================================== */
+
+.delete-button {
+    background-color: red !important;
+}
+
+.delete-button:hover {
+    background-color: darkred !important;
+}
+
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ======================================================
+   MOBILE RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .semester-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subject-container {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .previous-paper {
+        grid-column: span 1;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+
+    .admin-panel {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .login-box {
+        margin: 60px auto;
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .semester-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .semester-grid button {
+        padding: 15px;
+    }
+
+    .admin-login-button {
+        font-size: 14px;
+        padding: 9px 18px !important;
+    }
+}
