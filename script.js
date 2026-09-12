@@ -430,10 +430,10 @@ async function uploadNote() {
 
 
     // Maximum file size: 10 MB
-    if (file.size > 10 * 1024 * 1024) {
+    if (file.size > 50 * 1024 * 1024) {
 
         message.innerText =
-            "PDF must be smaller than 10 MB.";
+            "PDF must be smaller than 50 MB.";
 
         return;
     }
